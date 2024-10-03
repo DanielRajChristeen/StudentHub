@@ -68,7 +68,7 @@ def add_new_student():
     reg_no = input("Enter Register Number: ")
     name = input("Enter Name: ")
     department = input("Enter Department: ")
-    year_perusing = int(input("Enter Year of Perusing: "))
+    year_joining = int(input("Enter Year of joining: "))
     year_graduation = int(input("Enter Year of Graduation: "))
     contact_number = input("Enter Contact Number: ")
     email_id = input("Enter Email ID: ")
@@ -77,10 +77,10 @@ def add_new_student():
     scholarship = input("Scholarship (y/n): ")
     fees_due = float(input("Enter Fees Due: "))
     
-    c.execute('''INSERT INTO students (reg_no, name, department, year_perusing, year_graduation,
+    c.execute('''INSERT INTO students (reg_no, name, department, year_joining, year_graduation,
                 contact_number, email_id, cgpa, percentage, scholarship, fees_due)
                 VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)''',
-              (reg_no, name, department, year_perusing, year_graduation, contact_number,
+              (reg_no, name, department, year_joining, year_graduation, contact_number,
                email_id, cgpa, percentage, scholarship, fees_due))
     
     conn.commit()
@@ -113,7 +113,7 @@ def admin_edit_student_data():
     print(student_data)
     
     # Allow admin to edit any field
-    columns = ["name", "department", "year_perusing", "year_graduation", "contact_number",
+    columns = ["name", "department", "year_joining", "year_graduation", "contact_number",
                "email_id", "cgpa", "percentage", "scholarship", "fees_due"]
     
     column = input(f"Which field do you want to edit? Options: {', '.join(columns)}: ")
@@ -144,7 +144,7 @@ def main():
             
             edit_choice = input("Do you want to edit your data? (yes/no): ").lower()
             if edit_choice == "yes":
-                allowed_fields = ["name", "department", "year_perusing", "year_graduation",
+                allowed_fields = ["name", "department", "year_joining", "year_graduation",
                                   "contact_number", "email_id"]
                 edit_student_data(student_name, allowed_fields)
             else:
