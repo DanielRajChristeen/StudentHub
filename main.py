@@ -147,6 +147,7 @@ def main():
                 allowed_fields = ["name", "department", "year_joining", "year_graduation",
                                   "contact_number", "email_id"]
                 edit_student_data(student_name, allowed_fields)
+                print(student_data)
             else:
                 print("Closing data display.")
         
