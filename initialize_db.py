@@ -10,7 +10,7 @@ def initialize_db():
                     reg_no TEXT PRIMARY KEY,
                     name TEXT,
                     department TEXT,
-                    year_perusing INTEGER,
+                    year_joining INTEGER,
                     year_graduation INTEGER,
                     contact_number TEXT,
                     email_id TEXT,
