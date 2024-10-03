@@ -1,10 +1,6 @@
-Here’s a detailed structure for the README file for your **StudentHub** project:
-
----
-
 # StudentHub
 
-StudentHub is a student management system designed to store, manage, and display student information efficiently. It utilizes an SQLite database for data storage and includes a Python-based GUI for interaction. The project is structured to handle student data, and provide easy setup instructions.
+StudentHub is a student management system designed to store, manage, and display student information efficiently. It utilizes an SQLite database for data storage and includes a Python-based GUI for interaction. The project is structured to handle student data, offer insights into UI components through images, and provide easy setup instructions.
 
 ## Table of Contents
 - [Features](#features)
@@ -27,16 +23,11 @@ To run the project, ensure you have the following installed:
 - **SQLite** (bundled with Python)
 - **tkinter** for GUI management (part of Python's standard library)
 
-You can install the required Python packages using `pip`:
-```bash
-pip install -r requirements.txt
-```
-
 ## Installation
 Follow these steps to get the project running locally:
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/your-username/StudentHub.git
+   git clone https://github.com/DanielRajChristeen/StudentHub.git
    ```
 2. **Navigate to the Project Directory**:
    ```bash
