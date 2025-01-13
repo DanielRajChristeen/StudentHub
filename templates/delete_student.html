@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Student</title>
+    <link rel="stylesheet" href="{{ css_file }}">
+</head>
+<body>
+    <h1 class="logo">Delete Student Data</h1>
+    <form action="{{ url_for('delete_student') }}" method="post">
+        <label for="register_number">Register Number:</label>
+        <input type="text" id="register_number" name="register_number" required><br>
+        <button type="submit">Delete Student</button>
+    </form>
+    <button onclick="window.history.back()">Return Back</button>
+</body>
+</html>

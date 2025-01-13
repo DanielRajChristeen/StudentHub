@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Personal Details</title>
+    <link rel="stylesheet" href="{{ css_file }}">
+</head>
+<body>
+    <header>
+        <h1>Edit Personal Details</h1>
+    </header>
+    <div class="container">
+        <form action="/edit_student/{{ student_data[0] }}" method="post">
+            <label for="contact_number">Contact Number:</label>
+            <input type="text" id="contact_number" name="contact_number" value="{{ student_data[5] }}" required>
+            <label for="email_id">Email ID:</label>
+            <input type="email" id="email_id" name="email_id" value="{{ student_data[6] }}" required>
+            <button type="submit">Save Changes</button>
+        </form>
+        <a href="/student" class="button">Cancel</a>
+    </div>
+</body>
+</html>

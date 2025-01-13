@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Student</title>
+    <link rel="stylesheet" href="{{ css_file }}">
+</head>
+<body>
+    <h1>Add Student Data</h1>
+    <form action="{{ url_for('add_student') }}" method="post">
+        <label for="register_number">Register Number:</label>
+        <input type="text" id="register_number" name="register_number" required><br>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+        <label for="contact_number">Contact Number:</label>
+        <input type="text" id="contact_number" name="contact_number" required><br>
+        <label for="email_id">Email ID:</label>
+        <input type="email" id="email_id" name="email_id" required><br>
+        <button type="submit">Add</button>
+    </form>
+    <button onclick="window.history.back()">Return Back</button>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Data</title>
+    <link rel="stylesheet" href="{{ css_file }}">
+</head>
+<body>
+    <header>
+        <h1>Student Data</h1>
+    </header>
+    <div class="container">
+        <p>Name: {{ student_data[1] }}</p>
+        <p>Register Number: {{ student_data[0] }}</p>
+        <p>Department: {{ student_data[2] }}</p>
+        <p>Year of Joining: {{ student_data[3] }}</p>
+        <p>Year of Graduation: {{ student_data[4] }}</p>
+        <p>Contact Number: {{ student_data[5] }}</p>
+        <p>Email ID: {{ student_data[6] }}</p>
+        <p>CGPA: {{ student_data[7] }}</p>
+        <p>Percentage: {{ student_data[8] }}</p>
+        <p>Scholarship: {{ student_data[9] }}</p>
+        <p>Fees Due: {{ student_data[10] }}</p>
+        <a href="/" class="button">Return Back</a>
+        <a href="https://forms.gle/bMbw5oTRN394CYJS7" class="button" target="_blank">Request Edit Personal Details</a>
+    </div>
+</body>
+</html>
